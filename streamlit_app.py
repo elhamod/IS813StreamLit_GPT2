@@ -14,7 +14,7 @@ st.write(
     "Predictable response: " + output["generated_text"]
 )
 
-output = generator(prompt, max_length=max_token, num_return_sequences=1, truncation=True, temperature=1.5)[0]
+output = generator(prompt, max_length=int(max_token), num_return_sequences=1, truncation=True, temperature=1.5)[0]
 
 st.write(
     "Creative response: " + output["generated_text"]
